@@ -29,7 +29,7 @@ async def predict_hockey(data: dict):
         raise HTTPException(status_code=400, detail='Invalid number of parameters.')
 
     # Extract the parameters
-    if num_params == 3:
+    if num_params == 2:
         
         team = data.get('team')
         opp_team = data.get('opp_team')
